@@ -1,0 +1,412 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    box-sizing: border-box;
+  }
+
+  .register-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .register-form{
+    width: 20rem;
+    background-color: rgb(74, 150, 180);
+    padding: 2rem 1.5rem;
+    border-radius: 3rem;
+  }
+.form-inp{
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: column;  
+  
+}
+.inp{
+  border-radius: .5rem;
+  height: 2rem;
+  text-indent: .3rem;
+
+  
+}
+.register-form-btn{
+  padding: .3rem .5rem;
+  width:max-content;
+  border-radius: .3rem;
+  border: .1rem solid  rgb(74, 132, 155);
+  background-color:lightgray;
+}
+
+/* Message */
+.false{
+  width: max-content;
+ 
+  padding: .3rem;
+  border-radius: .3rem;
+  background-color: lightpink;
+}
+.true{
+  width: max-content; 
+  padding: .3rem;
+  border-radius: .3rem;
+  background-color:lightgreen;
+}
+
+/* Admin_Dashboard */
+.admindashboard-container{
+  width: 100%;
+  padding: 0 1rem;
+  background-color: brown;
+ 
+
+}
+.admindashboard-section{
+  display: flex;
+  flex-direction: row;
+}
+.adminsidebar{
+  width: 23%;
+ 
+
+}
+.active{
+  background-color:red;
+  padding: .3rem;
+  border-radius: .3rem;
+}
+.admin-navbar{
+  /* margin-left: 23%; */
+  /* width: 8%; */
+  width: 100vw;
+  /* margin-right: 10%; */
+  background-color: lightgreen;
+
+
+}
+
+
+/* Admin-SlidBar Menu */
+.sidebar-section{
+  margin: 0;
+  margin-left: .3rem;
+ 
+  height: 100vh;
+  /* position: fixed; */
+}
+.dashboard-title{
+  margin:0;
+  background-color: lightgreen;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.sidebar-menu{
+  display:flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: skyblue;
+  height: 100vh;
+}
+.sidebar-header{
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  
+}
+
+/* Admin Navbar */
+.adminnavbar-container{
+  width: 100%;
+
+ 
+}
+
+.adminnavbar-section{
+ 
+  background-color: rgb(98, 32, 204);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+  
+}
+.adminnavbar-welcome{
+  margin-left: 7rem;
+}
+
+
+/* Admin Panel Overview */
+.adminpaneloverview-container{
+  width: 100%;
+  padding: 0 1rem; 
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: #c043af;
+}
+.adminpaneloverview-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+ 
+  row-gap: 1rem;
+
+}
+.leavedetails-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 20%;
+  row-gap: 1.5rem;
+
+}
+
+/* Report Card */
+.reportcard{
+  display: flex;
+  column-gap: 1rem;
+}
+.reportcard-icon{
+  background-color: skyblue;
+  font-size: 3.5rem;
+  color:white;
+  padding: 0 .5rem;
+}
+.reportcard-items{
+  display: flex;
+  flex-direction: column;
+  row-gap: .1rem;
+}
+
+.reportcard-items>h3 , p{
+  margin: 0px;
+}
+
+.reportcard-bgcGreen{
+  background-color:Green;
+  font-size: 3.5rem;
+  color:white;
+  padding: 0 .5rem;
+}
+.reportcard-bgcRed{
+  background-color:rgb(214, 68, 75);
+  font-size: 3.5rem;
+  color:white;
+  padding: 0 .5rem;
+}
+.reportcard-bgcYellow{
+  background-color:rgb(233, 187, 89);
+  font-size: 3.5rem;
+  color:white;
+  padding: 0 .5rem;
+}
+
+/* Department List */
+.departmentlist-container{
+  padding: 0 1rem;
+
+}
+.departmentlist-section{
+  display:flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.departmentlist-banner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.departmentlist-search{
+  border-radius: .3rem;
+  text-indent: .3rem;
+  width: 20rem;
+}
+
+/* Add Department */
+.adddepartment-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.adddeparment-section{
+  margin-top: 10%;
+  width:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  border-radius: 1rem;
+ 
+}
+.adddepartment-form{
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+}
+.adddepartment-inp{
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.adddepartment-inp{
+  text-indent: .3rem;
+  border-radius: .3rem;
+}
+.adddepartment-btn{
+  width:max-content;
+  padding: .3rem .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+/* Edit and Delete Button */
+.dept-edit-btn{
+
+  margin-right: .5rem;
+  border-radius: .3rem;
+ 
+}
+.dept-delete-btn{
+background-color: #fff;
+border-radius: .3rem;
+}
+
+/* Empployee Form */
+.employee-container{
+
+}
+.employee-form{
+  padding: 1rem;
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+.form-section{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.form-emp-inp{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.emp-action{
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: .1rem;
+  background-color:lightgreen;
+ 
+}
+
+.emp-image{
+  border-radius: .5rem;
+  width: 50%;
+}
+
+/* Employee View */
+.employeeview-container{
+  /* background-color: rgb(223, 154, 65); */
+
+}
+.employeeview{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.employeeview-content{
+  padding: .5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  background-color: skyblue;
+  border-radius: 1rem;
+}
+.empview-img{
+  border-radius: 1rem;
+}
+.emp-profile{
+  display: flex; 
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Leave */
+
+.leavetype{
+  width: 100%;
+
+}
+.leave-status{
+  display: flex;
+  column-gap: .3rem;
+}
+.leave-approve-reject{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: .1rem;
+
+}
+.leave-approve{
+  background-color: lightgreen;
+  border-radius: .3rem;
+}
+.leave-reject{
+  background-color: lightcoral;
+  border-radius: .3rem;
+}
+.leave-filter-btn{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: .1rem;
+}
+.leave-filter-allbtn{
+  border-radius: .3rem;
+  background-color: lightgray;
+}
+.leave-filter-allbtn:hover{
+  background-color: rosybrown;
+}
+
+/* Employee Overview */
+.employeeoverview{
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.emp-user{
+  font-size: 5rem;
+}
+.Leave-Description{
+  text-indent: .3rem;
+}
