@@ -48,4 +48,4 @@ function AdminSideBar() {
   )
 }
 
-export default AdminSideBar
+export default AdminSideBar;

@@ -1,9 +1,8 @@
 
 import React from 'react'
-import AdminSideBar from '../components/adminDComponent/adminSideBar'
 import AdminNavBar from '../components/adminDComponent/AdminNavBar'
-import AdminPanelOverview from '../components/adminDComponent/AdminPanelOverview'
 import { Outlet } from 'react-router-dom'
+import AdminSideBar from '../components/adminDComponent/adminSideBar'
 
 
 
