@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Sidebar from '../components/employeeDashboard/Sidebar'
-import Navbar from '../components/employeeDashboard/navbar'
+import Navbar from '../components/employeeDashboard/Navbar'
 import { Outlet } from 'react-router-dom'
 
 
@@ -15,7 +15,7 @@ function EmployeeDashboard() {
     
             </div>
             <div className="admin-navbar">
-              <Navbar/>
+             <Navbar/>
            <Outlet/>
     
             </div>
