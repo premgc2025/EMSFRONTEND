@@ -1,4 +1,4 @@
 
-const base_URL =`https://vercel.com/prem-gcs-projects/emsbackend`
+const base_URL =`https://emsbackend-premgc.vercel.app/`
 
 export default base_URL;
