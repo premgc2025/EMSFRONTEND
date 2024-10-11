@@ -18,14 +18,8 @@ function EmployeeDashboard() {
              <Navbar/>
            <Outlet/>
     
-            </div>
-         
-           
-    
+            </div> 
           </div>
-          
-         
-    
         </div>
     
        
