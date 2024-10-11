@@ -1,4 +1,4 @@
 
-const base_URL =`http://localhost:5000`
+const base_URL =`https://emsbackend-premgc.vercel.app/`
 
 export default base_URL;
