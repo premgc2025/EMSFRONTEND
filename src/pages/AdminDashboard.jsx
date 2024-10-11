@@ -2,7 +2,7 @@
 import React from 'react'
 import AdminNavBar from '../components/adminDComponent/AdminNavBar'
 import { Outlet } from 'react-router-dom'
-import AdminSideBar from '../components/adminDComponent/adminSideBar'
+import AdminSideBar from '../components/adminDComponent/AdminSideBar'
 
 
 
@@ -15,7 +15,7 @@ function AdminDashboard() {
     <div className="admindashboard-container">
       <div className="admindashboard-section">
         <div className="adminsidebar">
-        <AdminSideBar/>
+      <AdminSideBar/>
 
         </div>
         <div className="admin-navbar">
