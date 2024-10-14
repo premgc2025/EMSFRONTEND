@@ -19,7 +19,7 @@ function Register() {
         event.preventDefault()
        
 
-        fetch(`https://emsbackend-premgc.vercel.app/register`,{
+        fetch(`${base_URL}/register`,{
             method:"POST",
             body:JSON.stringify(userData),
             headers:{
