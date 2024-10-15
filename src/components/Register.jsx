@@ -1,10 +1,12 @@
 
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
 import base_URL from '../helper.js'
+
 
 function Register() {
     const [userData, setUserData]= useState({})
+    const navigate = useNavigate()
   
 
     function inputData(e){
@@ -32,6 +34,10 @@ function Register() {
         })
         .then((data)=>{
             console.log("data after res ",data)
+            if(data.success){
+                navigate('/login')
+               
+            }
         })
         .catch((err)=>{
             console.log("error",err)
