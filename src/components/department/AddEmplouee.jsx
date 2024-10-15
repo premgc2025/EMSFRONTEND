@@ -34,7 +34,7 @@ function AddEmployee() {
             formDataObj.append(key, empData[key])
         })
 
-        console.log("coll EMP", formDataObj)
+        console.log("call EMP", formDataObj)
 
         fetch(`${base_URL}/api/employee`, {
             method: "POST",
@@ -52,7 +52,7 @@ function AddEmployee() {
                 console.log("data after res ", data)
             })
             .catch((err) => {
-                console.log("error", err)
+                console.log("error", err, err.message)
             })
     }
 
