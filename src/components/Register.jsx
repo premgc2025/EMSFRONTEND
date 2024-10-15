@@ -19,7 +19,7 @@ function Register() {
         event.preventDefault()
        
 
-        fetch(`${base_URL}/register`,{
+        fetch(`${base_URL}/api/register`,{
             method:"POST",
             body:JSON.stringify(userData),
             headers:{

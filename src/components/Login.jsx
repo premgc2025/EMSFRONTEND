@@ -25,7 +25,7 @@ function Login() {
 
      
 
-        fetch(`${base_URL}/login`,{
+        fetch(`${base_URL}/api/login`,{
             method:"POST",
             body:JSON.stringify(user),
             headers:{
