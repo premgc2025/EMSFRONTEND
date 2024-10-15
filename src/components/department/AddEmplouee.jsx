@@ -35,6 +35,8 @@ function AddEmployee() {
         })
 
         console.log("call EMP", formDataObj)
+        console.log("name email EMP", formDataObj.name,formDataObj.email)
+        console.log("token",token)
 
         fetch(`${base_URL}/api/employee`, {
             method: "POST",
