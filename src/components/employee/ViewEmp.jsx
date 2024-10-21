@@ -12,6 +12,7 @@ function ViewEmp() {
     const [employee, setEmployee] = useState({})
     const [loading, setLoading] = useState(false)
   
+    console.log("image ", employee.profileImage)
   
 
     useEffect(()=>{
@@ -30,13 +31,14 @@ function ViewEmp() {
       
        
            const getData = await resData.json()
+           console.log("image URL in",getData.getEmployee.userId.profileImage)
    
       
     
               setEmployee({               
               
                 name:getData.getEmployee.userId.name,
-                profileImage:getData.getEmployee.userId.profileImage,
+                profileImage:getData.getEmployee.userId.profileImage ,
                 departmentId:getData.getEmployee.departmentId.dept_name,
                 dob:new Date(getData.getEmployee.dob).toLocaleDateString(),
                 designation:getData.getEmployee.designation,
@@ -68,7 +70,7 @@ function ViewEmp() {
         <h3 className='emp-profile'>Employee Profile</h3>
     <div className="employeeview">
         <div className="employeeview-image">
-            <img src={`${base_URL}/${employee.profileImage}`} alt="Image" className='empview-img'/>
+            <img src={employee.profileImage} alt="Image" className='empview-img'/>
         </div>
         <div className="employeeview-content">
         <p>Name: {employee.name}</p>

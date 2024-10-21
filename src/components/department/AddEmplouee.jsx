@@ -8,13 +8,14 @@ function AddEmployee() {
     const { token } = userData()
     const [empData, setEmpData] = useState({})  
     const [deptData, setDeptData] = useState([])
+    console.log("onChange", empData)
    
 
     const newDept = deptData
 
     function inputData(e) {
         const { name, files, value } = e.target
-        if (name === "image") {
+        if (name === "file") {
             setEmpData((preValue) => {
                 return { ...preValue, [e.target.name]: e.target.files[0] }
             })
@@ -34,28 +35,40 @@ function AddEmployee() {
             formDataObj.append(key, empData[key])
         })
 
-        console.log("call EMP", formDataObj)
-        console.log("name email EMP", formDataObj.name,formDataObj.email)
+         // Log FormData entries
+    for (let [key, value] of formDataObj.entries()) {
+        console.log(key, value);
+    }
         console.log("token",token)
 
         fetch(`${base_URL}/api/employee`, {
             method: "POST",
-            body: formDataObj,
+            body:formDataObj,
             headers: {
-
-                "Authorization": `Bearer ${token}`
-            }
+                "Authorization": `Bearer ${token}`            }
         })
-            .then((response) => {
+
+        .then(response => response.text())  // Change to text for debugging
+.then(text => {
+    console.log(text);  // Log the raw response
+    try {
+        const json = JSON.parse(text);
+        // Handle the JSON data
+    } catch (error) {
+        console.error('Parsing error:', error);
+    }
+})
+.catch(error => console.error('Fetch error:', error));
+            // .then((response) => {
                
-                return response.json()
-            })
-            .then((data) => {
-                console.log("data after res ", data)
-            })
-            .catch((err) => {
-                console.log("error", err, err.message)
-            })
+            //     return response.json()
+            // })
+            // .then((data) => {
+            //     console.log("data after res ", JSON.parse(data))
+            // })
+            // .catch((err) => {
+            //     console.log("error", err, err.message)
+            // })
     }
 
     useEffect(() => {
@@ -187,7 +200,7 @@ function AddEmployee() {
                 <div className="form-section">
                     <div className="form-emp-inp">
                         <label htmlFor="imageId">Profile Image</label>
-                        <input className='inp' type="file" id="imageId" name="image" accept="image/*" onChange={inputData} required />
+                        <input className='inp' type="file" id="imageId" name="file" accept="image/*" onChange={inputData} required />
                     </div>
                 </div>
 
