@@ -42,7 +42,7 @@ function ListEmployee() {
                 _id:emp._id,
                 sno:sno++,
                 name:emp.userId.name,
-                profileImage:<img src={`${base_URL}/${emp.userId.profileImage}`} className='emp-image'/>,
+                profileImage:<img src={emp.userId.profileImage} className='emp-image'/>,
                 departmentId:emp.departmentId.dept_name,
                 dob:new Date(emp.dob).toLocaleDateString(),
                 action:<ActionButton id={emp._id}/>
