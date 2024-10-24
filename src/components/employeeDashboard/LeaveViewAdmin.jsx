@@ -103,7 +103,7 @@ function LeaveViewAdmin() {
             <h3 className='emp-profile'>Leave Detail</h3>
         <div className="employeeview">
             <div className="employeeview-image">
-                <img src={`${base_URL}/${leave.profileImage}`} alt="Image" className='empview-img'/>
+                <img src={leave.profileImage} alt="Image" className='empview-img'/>
             </div>
             <div className="employeeview-content">
             <p>Name: {leave.name}</p>

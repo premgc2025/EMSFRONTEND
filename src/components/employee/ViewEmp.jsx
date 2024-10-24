@@ -12,7 +12,7 @@ function ViewEmp() {
     const [employee, setEmployee] = useState({})
     const [loading, setLoading] = useState(false)
   
-    console.log("image ", employee.profileImage)
+  
   
 
     useEffect(()=>{
