@@ -13,7 +13,7 @@ function EmployeeOverview() {
   const [employee, setEmployee] = useState({})
   const [loading, setLoading] = useState(false)
 
-console.log("employee",loginId)
+
 
   useEffect(()=>{
     const fetchDeptList=async()=>{
